@@ -20,7 +20,7 @@
 [CmdletBinding()]
 Param (
     # List of ComputerName(s) to check (e.g., "Computer1", "Computer2"). Can be piped to the script or listed as part of the -ComputerNames parameter. Defaults to the local computer.
-    [Parameter(Mandatory=$true,ValueFromPipeline=$true,HelpMessage="Type the list of computers to collect events from ('Computer1','Computer2').")]
+    [Parameter(Mandatory=$false,ValueFromPipeline=$true,HelpMessage="Type the list of computers to collect events from ('Computer1','Computer2').")]
     [System.String[]]$ComputerNames = $env:COMPUTERNAME,
 
     # Specifies the minimum FSLogix Version to check. Defaults to 2.9.7653.47581
